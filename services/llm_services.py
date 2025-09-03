@@ -1,5 +1,8 @@
 from openai import OpenAI
-from utils.config import OPENAI_KEY
+from dotenv import load_dotenv
+from os import getenv
+
+load_dotenv()
 
 client = OpenAI(api_key=OPENAI_KEY)
 

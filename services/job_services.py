@@ -1,5 +1,8 @@
 import requests
-from utils.config import ADZUNA_APP_ID, ADZUNA_KEY
+from dotenv import load_dotenv
+from os import getenv
+
+load_dotenv()
 
 def fetch_jobs(query, location="remote"):
     url = (
